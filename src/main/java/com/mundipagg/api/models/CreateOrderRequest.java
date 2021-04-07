@@ -224,7 +224,7 @@ public class CreateOrderRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("closed")
     public boolean getClosed ( ) { 
@@ -232,7 +232,7 @@ public class CreateOrderRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("closed")
     public void setClosed (boolean value) { 
@@ -256,7 +256,7 @@ public class CreateOrderRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("antifraud")
     public CreateAntifraudRequest getAntifraud ( ) { 
@@ -264,7 +264,7 @@ public class CreateOrderRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("antifraud")
     public void setAntifraud (CreateAntifraudRequest value) { 

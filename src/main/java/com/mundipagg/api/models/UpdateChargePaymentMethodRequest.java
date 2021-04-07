@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class UpdateChargePaymentMethodRequest 
@@ -153,7 +152,7 @@ public class UpdateChargePaymentMethodRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("private_label")
     public CreatePrivateLabelPaymentRequest getPrivateLabel ( ) { 
@@ -161,7 +160,7 @@ public class UpdateChargePaymentMethodRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("private_label")
     public void setPrivateLabel (CreatePrivateLabelPaymentRequest value) { 

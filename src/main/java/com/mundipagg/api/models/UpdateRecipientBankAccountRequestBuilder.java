@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class UpdateRecipientBankAccountRequestBuilder {
     //the instance to build
     private UpdateRecipientBankAccountRequest updateRecipientBankAccountRequest;

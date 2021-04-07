@@ -38,7 +38,7 @@ public class GetOrderResponse
     private GetDeviceResponse device;
     private boolean closed;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -46,7 +46,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -54,7 +54,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("code")
     public String getCode ( ) { 
@@ -62,7 +62,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("code")
     public void setCode (String value) { 
@@ -70,7 +70,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("currency")
     public String getCurrency ( ) { 
@@ -78,7 +78,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("currency")
     public void setCurrency (String value) { 
@@ -86,7 +86,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("items")
     public List<GetOrderItemResponse> getItems ( ) { 
@@ -94,7 +94,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("items")
     public void setItems (List<GetOrderItemResponse> value) { 
@@ -102,7 +102,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("customer")
     public GetCustomerResponse getCustomer ( ) { 
@@ -110,7 +110,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("customer")
     public void setCustomer (GetCustomerResponse value) { 
@@ -118,7 +118,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -126,7 +126,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -134,7 +134,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -143,7 +143,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -152,7 +152,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -161,7 +161,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -170,7 +170,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("charges")
     public List<GetChargeResponse> getCharges ( ) { 
@@ -178,7 +178,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("charges")
     public void setCharges (List<GetChargeResponse> value) { 
@@ -186,7 +186,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("invoice_url")
     public String getInvoiceUrl ( ) { 
@@ -194,7 +194,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("invoice_url")
     public void setInvoiceUrl (String value) { 
@@ -202,7 +202,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("shipping")
     public GetShippingResponse getShipping ( ) { 
@@ -210,7 +210,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("shipping")
     public void setShipping (GetShippingResponse value) { 
@@ -218,7 +218,7 @@ public class GetOrderResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -226,7 +226,7 @@ public class GetOrderResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 

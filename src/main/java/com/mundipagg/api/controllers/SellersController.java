@@ -5,46 +5,38 @@
  */
 package com.mundipagg.api.controllers;
 
-import java.io.*;
-import java.util.*;
-import java.util.concurrent.*;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import org.joda.time.DateTime;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
-import com.mundipagg.api.*;
-import com.mundipagg.api.models.*;
-import com.mundipagg.api.exceptions.*;
-import com.mundipagg.api.http.client.HttpClient;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.mundipagg.api.APIHelper;
+import com.mundipagg.api.Configuration;
+import com.mundipagg.api.DateTimeHelper;
+import com.mundipagg.api.exceptions.APIException;
+import com.mundipagg.api.http.client.APICallBack;
 import com.mundipagg.api.http.client.HttpContext;
 import com.mundipagg.api.http.request.HttpRequest;
 import com.mundipagg.api.http.response.HttpResponse;
 import com.mundipagg.api.http.response.HttpStringResponse;
-import com.mundipagg.api.http.client.APICallBack;
-import com.mundipagg.api.controllers.syncwrapper.APICallBackCatcher;
+import com.mundipagg.api.models.CreateSellerRequest;
+import com.mundipagg.api.models.GetSellerResponse;
+import com.mundipagg.api.models.ListSellerResponse;
+import com.mundipagg.api.models.UpdateMetadataRequest;
+import com.mundipagg.api.models.UpdateSellerRequest;
+
+import org.joda.time.DateTime;
 
 public class SellersController extends BaseController {
-    //private static variables for the singleton pattern
-    private static final Object syncObject = new Object();
-    private static SellersController instance = null;
+   
+    private Configuration Configuration; 
 
-    /**
-     * Singleton pattern implementation 
-     * @return The singleton instance of the SellersController class 
-     */
-    public static SellersController getInstance() {
-        if (null == instance) {
-            synchronized (syncObject) {
-                if (null == instance) {
-                    instance = new SellersController();
-                }
-            }
-        }
-        return instance;
+    public SellersController(Configuration configuration) {
+        this.Configuration = configuration;
     }
-
+    
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    id    Required parameter: Seller Id
      * @return    Returns the GetSellerResponse response from the API call 
      */
@@ -60,7 +52,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    id    Required parameter: Seller Id
      */
     public void getSellerByIdAsync(
@@ -162,7 +154,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    sellerId    Required parameter: Seller Id
      * @param    idempotencyKey    Optional parameter: Example: 
      * @return    Returns the GetSellerResponse response from the API call 
@@ -180,7 +172,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    sellerId    Required parameter: Seller Id
      * @param    idempotencyKey    Optional parameter: Example: 
      */
@@ -288,7 +280,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    request    Required parameter: Seller Model
      * @param    idempotencyKey    Optional parameter: Example: 
      * @return    Returns the GetSellerResponse response from the API call 
@@ -306,7 +298,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    request    Required parameter: Seller Model
      * @param    idempotencyKey    Optional parameter: Example: 
      */
@@ -410,7 +402,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    page    Optional parameter: Page number
      * @param    size    Optional parameter: Page size
      * @param    name    Optional parameter: Example: 
@@ -442,7 +434,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    page    Optional parameter: Page number
      * @param    size    Optional parameter: Page size
      * @param    name    Optional parameter: Example: 
@@ -594,7 +586,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    id    Required parameter: Example: 
      * @param    request    Required parameter: Update Seller model
      * @param    idempotencyKey    Optional parameter: Example: 
@@ -614,7 +606,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    id    Required parameter: Example: 
      * @param    request    Required parameter: Update Seller model
      * @param    idempotencyKey    Optional parameter: Example: 
@@ -726,7 +718,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    sellerId    Required parameter: Seller Id
      * @param    request    Required parameter: Request for updating the charge metadata
      * @param    idempotencyKey    Optional parameter: Example: 
@@ -746,7 +738,7 @@ public class SellersController extends BaseController {
     }
 
     /**
-     * TODO: type endpoint description here
+     * 
      * @param    sellerId    Required parameter: Seller Id
      * @param    request    Required parameter: Request for updating the charge metadata
      * @param    idempotencyKey    Optional parameter: Example: 

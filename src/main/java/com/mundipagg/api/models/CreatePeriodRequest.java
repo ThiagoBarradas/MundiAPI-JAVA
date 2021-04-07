@@ -5,7 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -21,7 +20,7 @@ public class CreatePeriodRequest
     private static final long serialVersionUID = -72775155535351533L;
     private DateTime endAt;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("end_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -30,7 +29,7 @@ public class CreatePeriodRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("end_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

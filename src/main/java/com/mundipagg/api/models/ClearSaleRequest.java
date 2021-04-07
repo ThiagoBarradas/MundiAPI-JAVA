@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class ClearSaleRequest 
@@ -17,7 +16,7 @@ public class ClearSaleRequest
     private static final long serialVersionUID = -75224887531126281L;
     private int customSla;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("custom_sla")
     public int getCustomSla ( ) { 
@@ -25,7 +24,7 @@ public class ClearSaleRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("custom_sla")
     public void setCustomSla (int value) { 

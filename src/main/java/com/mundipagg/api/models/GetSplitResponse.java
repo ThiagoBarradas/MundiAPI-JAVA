@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetSplitResponse 
@@ -86,7 +85,7 @@ public class GetSplitResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("options")
     public GetSplitOptionsResponse getOptions ( ) { 
@@ -94,7 +93,7 @@ public class GetSplitResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("options")
     public void setOptions (GetSplitOptionsResponse value) { 
@@ -102,7 +101,7 @@ public class GetSplitResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -110,7 +109,7 @@ public class GetSplitResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 

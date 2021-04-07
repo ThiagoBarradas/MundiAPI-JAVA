@@ -41,7 +41,7 @@ public class GetPlanResponse
     private Integer minimumPrice;
     private DateTime deletedAt;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -49,7 +49,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -57,7 +57,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("name")
     public String getName ( ) { 
@@ -65,7 +65,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("name")
     public void setName (String value) { 
@@ -73,7 +73,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("description")
     public String getDescription ( ) { 
@@ -81,7 +81,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("description")
     public void setDescription (String value) { 
@@ -89,7 +89,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("url")
     public String getUrl ( ) { 
@@ -97,7 +97,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("url")
     public void setUrl (String value) { 
@@ -105,7 +105,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("statement_descriptor")
     public String getStatementDescriptor ( ) { 
@@ -113,7 +113,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("statement_descriptor")
     public void setStatementDescriptor (String value) { 
@@ -121,7 +121,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("interval")
     public String getInterval ( ) { 
@@ -129,7 +129,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("interval")
     public void setInterval (String value) { 
@@ -137,7 +137,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("interval_count")
     public int getIntervalCount ( ) { 
@@ -145,7 +145,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("interval_count")
     public void setIntervalCount (int value) { 
@@ -153,7 +153,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("billing_type")
     public String getBillingType ( ) { 
@@ -161,7 +161,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("billing_type")
     public void setBillingType (String value) { 
@@ -169,7 +169,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("payment_methods")
     public List<String> getPaymentMethods ( ) { 
@@ -177,7 +177,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("payment_methods")
     public void setPaymentMethods (List<String> value) { 
@@ -185,7 +185,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("installments")
     public List<Integer> getInstallments ( ) { 
@@ -193,7 +193,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("installments")
     public void setInstallments (List<Integer> value) { 
@@ -201,7 +201,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -209,7 +209,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -217,7 +217,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("currency")
     public String getCurrency ( ) { 
@@ -225,7 +225,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("currency")
     public void setCurrency (String value) { 
@@ -233,7 +233,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -242,7 +242,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -251,7 +251,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -260,7 +260,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -269,7 +269,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("items")
     public List<GetPlanItemResponse> getItems ( ) { 
@@ -277,7 +277,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("items")
     public void setItems (List<GetPlanItemResponse> value) { 
@@ -285,7 +285,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("billing_days")
     public List<Integer> getBillingDays ( ) { 
@@ -293,7 +293,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("billing_days")
     public void setBillingDays (List<Integer> value) { 
@@ -301,7 +301,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("shippable")
     public boolean getShippable ( ) { 
@@ -309,7 +309,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("shippable")
     public void setShippable (boolean value) { 
@@ -317,7 +317,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -325,7 +325,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 
@@ -333,7 +333,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("trial_period_days")
     public Integer getTrialPeriodDays ( ) { 
@@ -341,7 +341,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("trial_period_days")
     public void setTrialPeriodDays (Integer value) { 
@@ -349,7 +349,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("minimum_price")
     public Integer getMinimumPrice ( ) { 
@@ -357,7 +357,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("minimum_price")
     public void setMinimumPrice (Integer value) { 
@@ -365,7 +365,7 @@ public class GetPlanResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("deleted_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -374,7 +374,7 @@ public class GetPlanResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("deleted_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

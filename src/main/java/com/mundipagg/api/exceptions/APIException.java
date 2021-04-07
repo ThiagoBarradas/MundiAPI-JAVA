@@ -6,7 +6,7 @@
 package com.mundipagg.api.exceptions;
 
 import java.io.IOException;
-import java.io.InputStream;
+
 import com.mundipagg.api.APIHelper;
 import com.mundipagg.api.http.client.HttpContext;
 import com.mundipagg.api.http.response.HttpStringResponse;
@@ -14,9 +14,6 @@ import com.mundipagg.api.http.response.HttpStringResponse;
 public class APIException extends Exception {
     //UID for serialization
     private static final long serialVersionUID = 6424174253911720338L;
-
-    //private fields
-    private int responseCode;
 
     //private fields
     private HttpContext httpContext;

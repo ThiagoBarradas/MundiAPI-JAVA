@@ -43,7 +43,7 @@ public class GetSellerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("name")
     public String getName ( ) { 
@@ -51,7 +51,7 @@ public class GetSellerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("name")
     public void setName (String value) { 
@@ -59,7 +59,7 @@ public class GetSellerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("code")
     public String getCode ( ) { 
@@ -67,7 +67,7 @@ public class GetSellerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("code")
     public void setCode (String value) { 
@@ -75,7 +75,7 @@ public class GetSellerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("document")
     public String getDocument ( ) { 
@@ -83,7 +83,7 @@ public class GetSellerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("document")
     public void setDocument (String value) { 

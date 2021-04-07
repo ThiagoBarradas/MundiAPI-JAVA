@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class PixAdditionalInformation 
@@ -18,7 +17,7 @@ public class PixAdditionalInformation
     private String name;
     private String value;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("Name")
     public String getName ( ) { 
@@ -26,7 +25,7 @@ public class PixAdditionalInformation
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("Name")
     public void setName (String value) { 
@@ -34,7 +33,7 @@ public class PixAdditionalInformation
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("Value")
     public String getValue ( ) { 
@@ -42,7 +41,7 @@ public class PixAdditionalInformation
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("Value")
     public void setValue (String value) { 

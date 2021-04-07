@@ -9,14 +9,14 @@ public class GetInvoiceById {
 
     public static void main(String[] args) {
 
-        String basicAuthUserName = "sk_test_4tdVXpseumRmqbo"; // The username to use with basic authentication
+        String basicAuthUserName = "sk_test_q73YODBFQhyV9mod"; // The username to use with basic authentication
         String basicAuthPassword = ""; // The password to use with basic authentication
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
         String invoiceId = "in_DKRdGqpsaVS4rmpl";
 
-        InvoicesController invoices_controller = new InvoicesController();
+        InvoicesController invoices_controller = client.getInvoices();
 
         invoices_controller.getInvoiceAsync(invoiceId, new APICallBack<GetInvoiceResponse>() {
             @Override

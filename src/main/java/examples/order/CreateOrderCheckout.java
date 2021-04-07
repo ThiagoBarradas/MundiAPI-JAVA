@@ -17,7 +17,7 @@ public class CreateOrderCheckout {
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
-        OrdersController orders_controller = new OrdersController();
+        OrdersController orders_controller = client.getOrders();
 
 
         CreateCustomerRequest create_customer_request = new CreateCustomerRequest();
@@ -45,7 +45,7 @@ public class CreateOrderCheckout {
         paymentTwo.add("credit_card");
         paymentTwo.add("boleto");
         multiPayments.add(paymentTwo);
-        create_checkout_payment_request.setAcceptedMultiPaymentMethods(Collections.singletonList(multiPayments));
+        //create_checkout_payment_request.setAcceptedMultiPaymentMethods(Collections.singletonList(multiPayments));
 
         create_checkout_payment_request.setSuccessUrl("https://www.mundipagg.com'");
 

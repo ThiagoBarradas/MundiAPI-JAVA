@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.http.request;
 
-import com.mundipagg.api.http.request.HttpMethod;
-
 import java.util.Map;
 
 public class HttpBodyRequest extends HttpRequest {

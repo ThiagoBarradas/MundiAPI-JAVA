@@ -5,14 +5,14 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mundipagg.api.DateTimeHelper;
+
 import org.joda.time.DateTime;
 
 @JsonInclude(Include.ALWAYS)
@@ -26,7 +26,7 @@ public class CreateUsageRequest
     private String group;
     private Integer amount;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("quantity")
     public int getQuantity ( ) { 
@@ -34,7 +34,7 @@ public class CreateUsageRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("quantity")
     public void setQuantity (int value) { 
@@ -42,7 +42,7 @@ public class CreateUsageRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("description")
     public String getDescription ( ) { 
@@ -50,7 +50,7 @@ public class CreateUsageRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("description")
     public void setDescription (String value) { 
@@ -58,7 +58,7 @@ public class CreateUsageRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("used_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -67,7 +67,7 @@ public class CreateUsageRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("used_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

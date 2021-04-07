@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetBillingAddressResponse 
@@ -26,7 +25,7 @@ public class GetBillingAddressResponse
     private String line1;
     private String line2;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("street")
     public String getStreet ( ) { 
@@ -34,7 +33,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("street")
     public void setStreet (String value) { 
@@ -42,7 +41,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("number")
     public String getNumber ( ) { 
@@ -50,7 +49,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("number")
     public void setNumber (String value) { 
@@ -58,7 +57,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("zip_code")
     public String getZipCode ( ) { 
@@ -66,7 +65,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("zip_code")
     public void setZipCode (String value) { 
@@ -74,7 +73,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("neighborhood")
     public String getNeighborhood ( ) { 
@@ -82,7 +81,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("neighborhood")
     public void setNeighborhood (String value) { 
@@ -90,7 +89,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("city")
     public String getCity ( ) { 
@@ -98,7 +97,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("city")
     public void setCity (String value) { 
@@ -106,7 +105,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("state")
     public String getState ( ) { 
@@ -114,7 +113,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("state")
     public void setState (String value) { 
@@ -122,7 +121,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("country")
     public String getCountry ( ) { 
@@ -130,7 +129,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("country")
     public void setCountry (String value) { 
@@ -138,7 +137,7 @@ public class GetBillingAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("complement")
     public String getComplement ( ) { 
@@ -146,7 +145,7 @@ public class GetBillingAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("complement")
     public void setComplement (String value) { 

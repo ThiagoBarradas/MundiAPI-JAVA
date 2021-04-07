@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetPhonesResponse 
@@ -18,7 +17,7 @@ public class GetPhonesResponse
     private GetPhoneResponse homePhone;
     private GetPhoneResponse mobilePhone;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("home_phone")
     public GetPhoneResponse getHomePhone ( ) { 
@@ -26,7 +25,7 @@ public class GetPhonesResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("home_phone")
     public void setHomePhone (GetPhoneResponse value) { 
@@ -34,7 +33,7 @@ public class GetPhonesResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("mobile_phone")
     public GetPhoneResponse getMobilePhone ( ) { 
@@ -42,7 +41,7 @@ public class GetPhonesResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("mobile_phone")
     public void setMobilePhone (GetPhoneResponse value) { 

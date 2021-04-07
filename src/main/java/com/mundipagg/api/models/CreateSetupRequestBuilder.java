@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateSetupRequestBuilder {
     //the instance to build
     private CreateSetupRequest createSetupRequest;

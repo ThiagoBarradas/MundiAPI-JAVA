@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetSetupResponse 
@@ -20,7 +19,7 @@ public class GetSetupResponse
     private int amount;
     private String status;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -28,7 +27,7 @@ public class GetSetupResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -36,7 +35,7 @@ public class GetSetupResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("description")
     public String getDescription ( ) { 
@@ -44,7 +43,7 @@ public class GetSetupResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("description")
     public void setDescription (String value) { 
@@ -52,7 +51,7 @@ public class GetSetupResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("amount")
     public int getAmount ( ) { 
@@ -60,7 +59,7 @@ public class GetSetupResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("amount")
     public void setAmount (int value) { 
@@ -68,7 +67,7 @@ public class GetSetupResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -76,7 +75,7 @@ public class GetSetupResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 

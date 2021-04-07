@@ -21,7 +21,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     private int delay;
     private List<Integer> days;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("enabled")
     public boolean getEnabled ( ) { 
@@ -29,7 +29,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("enabled")
     public void setEnabled (boolean value) { 
@@ -37,7 +37,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -45,7 +45,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -53,7 +53,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("volume_percentage")
     public int getVolumePercentage ( ) { 
@@ -61,7 +61,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("volume_percentage")
     public void setVolumePercentage (int value) { 
@@ -69,7 +69,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("delay")
     public int getDelay ( ) { 
@@ -77,7 +77,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("delay")
     public void setDelay (int value) { 
@@ -85,7 +85,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("days")
     public List<Integer> getDays ( ) { 
@@ -93,7 +93,7 @@ public class CreateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("days")
     public void setDays (List<Integer> value) { 

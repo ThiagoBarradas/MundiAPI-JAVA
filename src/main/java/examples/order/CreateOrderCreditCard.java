@@ -11,12 +11,12 @@ public class CreateOrderCreditCard {
 	
 	public static void main(String[] args) {
 
-        String basicAuthUserName = "sk_test_4tdVXpseumRmqbo"; // The username to use with basic authentication
+        String basicAuthUserName = "sk_test_q73YODBFQhyV9mod"; // The username to use with basic authentication
         String basicAuthPassword = ""; // The password to use with basic authentication
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
-        OrdersController orders_controller = new OrdersController();
+        OrdersController orders_controller = client.getOrders();
 
         CreateCustomerRequest customer = new CreateCustomerRequest();
         customer.setName("sdk customer order");

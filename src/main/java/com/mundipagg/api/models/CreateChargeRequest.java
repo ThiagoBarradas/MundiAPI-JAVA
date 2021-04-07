@@ -143,7 +143,7 @@ public class CreateChargeRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("antifraud")
     public CreateAntifraudRequest getAntifraud ( ) { 
@@ -151,7 +151,7 @@ public class CreateChargeRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("antifraud")
     public void setAntifraud (CreateAntifraudRequest value) { 

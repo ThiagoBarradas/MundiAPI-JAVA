@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetSellersRequest 
@@ -23,7 +22,7 @@ public class GetSellersRequest
     private String createdSince;
     private String createdUntil;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("name")
     public String getName ( ) { 
@@ -31,7 +30,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("name")
     public void setName (String value) { 
@@ -39,7 +38,7 @@ public class GetSellersRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("document")
     public String getDocument ( ) { 
@@ -47,7 +46,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("document")
     public void setDocument (String value) { 
@@ -55,7 +54,7 @@ public class GetSellersRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("code")
     public String getCode ( ) { 
@@ -63,7 +62,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("code")
     public void setCode (String value) { 
@@ -71,7 +70,7 @@ public class GetSellersRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -79,7 +78,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -87,7 +86,7 @@ public class GetSellersRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -95,7 +94,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -103,7 +102,7 @@ public class GetSellersRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_Since")
     public String getCreatedSince ( ) { 
@@ -111,7 +110,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_Since")
     public void setCreatedSince (String value) { 
@@ -119,7 +118,7 @@ public class GetSellersRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_Until")
     public String getCreatedUntil ( ) { 
@@ -127,7 +126,7 @@ public class GetSellersRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_Until")
     public void setCreatedUntil (String value) { 

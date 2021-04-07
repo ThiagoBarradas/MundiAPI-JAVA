@@ -1,30 +1,29 @@
 package examples.address;
 
+import java.util.LinkedHashMap;
+
 import com.mundipagg.api.MundiAPIClient;
-import com.mundipagg.api.controllers.CustomersController;
 import com.mundipagg.api.http.client.APICallBack;
 import com.mundipagg.api.http.client.HttpContext;
-import com.mundipagg.api.models.*;
-
-import java.util.LinkedHashMap;
+import com.mundipagg.api.models.CreateAddressRequest;
+import com.mundipagg.api.models.GetAddressResponse;
+import com.mundipagg.api.models.UpdateMetadataRequest;
 
 public class CreateAddress {
 	
 	public static void main(String[] args) {
 		
-		String basicAuthUserName = "sk_test_4tdVXpseumRmqbo"; // The username to use with basic authentication
+		String basicAuthUserName = "sk_test_q73YODBFQhyV9mod"; // The username to use with basic authentication
         String basicAuthPassword = ""; // The password to use with basic authentication
         
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
-        
-        CustomersController customers_controller = new CustomersController();
         
         String customerId = "cus_PzRyp10FeNca2rVB";
                 
         CreateAddressRequest request = new CreateAddressRequest();
         
         request.setLine1("10880, Malibu Point, Malibu Central");
-        request.setLine2("7º floor");
+        request.setLine2("7ï¿½ floor");
         request.setZipCode("90265");
         request.setCity("Malibu");
         request.setState("CA");
@@ -35,7 +34,7 @@ public class CreateAddress {
         updateMetadata.setMetadata(metadata);
         request.setMetadata(updateMetadata.getMetadata());
         
-        customers_controller.createAddressAsync(customerId, request, null, new APICallBack<GetAddressResponse>() {
+        client.getCustomers().createAddressAsync(customerId, request, null, new APICallBack<GetAddressResponse>() {
             @Override
             public void onSuccess(HttpContext context, GetAddressResponse response) {
 

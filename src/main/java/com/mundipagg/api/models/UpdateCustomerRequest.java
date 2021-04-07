@@ -122,7 +122,7 @@ public class UpdateCustomerRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("phones")
     public CreatePhonesRequest getPhones ( ) { 
@@ -130,7 +130,7 @@ public class UpdateCustomerRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("phones")
     public void setPhones (CreatePhonesRequest value) { 
@@ -170,7 +170,7 @@ public class UpdateCustomerRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("document_type")
     public String getDocumentType ( ) { 
@@ -178,7 +178,7 @@ public class UpdateCustomerRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("document_type")
     public void setDocumentType (String value) { 

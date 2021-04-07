@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetUsageReportResponse 
@@ -19,7 +18,7 @@ public class GetUsageReportResponse
     private String usageReportUrl;
     private String groupedReportUrl;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("url")
     public String getUrl ( ) { 
@@ -27,7 +26,7 @@ public class GetUsageReportResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("url")
     public void setUrl (String value) { 
@@ -35,7 +34,7 @@ public class GetUsageReportResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("usage_report_url")
     public String getUsageReportUrl ( ) { 
@@ -43,7 +42,7 @@ public class GetUsageReportResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("usage_report_url")
     public void setUsageReportUrl (String value) { 
@@ -51,7 +50,7 @@ public class GetUsageReportResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("grouped_report_url")
     public String getGroupedReportUrl ( ) { 
@@ -59,7 +58,7 @@ public class GetUsageReportResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("grouped_report_url")
     public void setGroupedReportUrl (String value) { 

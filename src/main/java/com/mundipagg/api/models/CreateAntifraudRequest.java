@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class CreateAntifraudRequest 
@@ -18,7 +17,7 @@ public class CreateAntifraudRequest
     private String type;
     private CreateClearSaleRequest clearsale;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -26,7 +25,7 @@ public class CreateAntifraudRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -34,7 +33,7 @@ public class CreateAntifraudRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("clearsale")
     public CreateClearSaleRequest getClearsale ( ) { 
@@ -42,7 +41,7 @@ public class CreateAntifraudRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("clearsale")
     public void setClearsale (CreateClearSaleRequest value) { 

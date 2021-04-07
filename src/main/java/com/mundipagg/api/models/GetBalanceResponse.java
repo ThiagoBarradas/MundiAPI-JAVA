@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetBalanceResponse 
@@ -69,7 +68,7 @@ public class GetBalanceResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("waiting_funds_amount")
     public int getWaitingFundsAmount ( ) { 
@@ -77,7 +76,7 @@ public class GetBalanceResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("waiting_funds_amount")
     public void setWaitingFundsAmount (int value) { 
@@ -85,7 +84,7 @@ public class GetBalanceResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("transferred_amount")
     public int getTransferredAmount ( ) { 
@@ -93,7 +92,7 @@ public class GetBalanceResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("transferred_amount")
     public void setTransferredAmount (int value) { 

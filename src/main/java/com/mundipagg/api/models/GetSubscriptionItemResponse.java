@@ -33,7 +33,7 @@ public class GetSubscriptionItemResponse
     private Integer cycles;
     private DateTime deletedAt;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -41,7 +41,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -49,7 +49,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("description")
     public String getDescription ( ) { 
@@ -57,7 +57,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("description")
     public void setDescription (String value) { 
@@ -65,7 +65,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -73,7 +73,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -81,7 +81,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -90,7 +90,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -99,7 +99,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -108,7 +108,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -117,7 +117,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("pricing_scheme")
     public GetPricingSchemeResponse getPricingScheme ( ) { 
@@ -125,7 +125,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("pricing_scheme")
     public void setPricingScheme (GetPricingSchemeResponse value) { 
@@ -133,7 +133,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("discounts")
     public List<GetDiscountResponse> getDiscounts ( ) { 
@@ -141,7 +141,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("discounts")
     public void setDiscounts (List<GetDiscountResponse> value) { 
@@ -149,7 +149,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("increments")
     public List<GetIncrementResponse> getIncrements ( ) { 
@@ -157,7 +157,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("increments")
     public void setIncrements (List<GetIncrementResponse> value) { 
@@ -165,7 +165,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("subscription")
     public GetSubscriptionResponse getSubscription ( ) { 
@@ -173,7 +173,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("subscription")
     public void setSubscription (GetSubscriptionResponse value) { 
@@ -197,7 +197,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("quantity")
     public Integer getQuantity ( ) { 
@@ -205,7 +205,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("quantity")
     public void setQuantity (Integer value) { 
@@ -213,7 +213,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("cycles")
     public Integer getCycles ( ) { 
@@ -221,7 +221,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("cycles")
     public void setCycles (Integer value) { 
@@ -229,7 +229,7 @@ public class GetSubscriptionItemResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("deleted_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -238,7 +238,7 @@ public class GetSubscriptionItemResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("deleted_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.http.client;
 
-import com.mundipagg.api.http.client.HttpContext;
-
 /**
  * Callback class for handling API calls with a templated response type T
  */

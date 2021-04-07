@@ -1,7 +1,6 @@
 package examples.cards;
 
 import com.mundipagg.api.MundiAPIClient;
-import com.mundipagg.api.controllers.CustomersController;
 import com.mundipagg.api.http.client.*;
 import com.mundipagg.api.models.*;
 
@@ -9,12 +8,10 @@ public class CreateCard {
 
     public static void main(String[] args) {
 
-        String basicAuthUserName = "sk_test_4tdVXpseumRmqbo"; // The username to use with basic authentication
+        String basicAuthUserName = "sk_test_q73YODBFQhyV9mod"; // The username to use with basic authentication
         String basicAuthPassword = ""; // The password to use with basic authentication
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
-
-        CustomersController customers_controller = new CustomersController();
 
         String customerId = "cus_YL6zwglSxhg2X14g";
 
@@ -44,7 +41,7 @@ public class CreateCard {
         request.setOptions(new CreateCardOptionsRequest());
         request.getOptions().setVerifyCard(true);
 
-        customers_controller.createCardAsync(customerId, request, null, new APICallBack<GetCardResponse>() {
+        client.getCustomers().createCardAsync(customerId, request, null, new APICallBack<GetCardResponse>() {
             @Override
             public void onSuccess(HttpContext context, GetCardResponse response) {
                 System.out.println("Card create !");

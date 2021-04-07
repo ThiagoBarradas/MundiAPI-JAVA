@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class UpdateOrderItemRequest 
@@ -20,7 +19,7 @@ public class UpdateOrderItemRequest
     private int quantity;
     private String category;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("amount")
     public int getAmount ( ) { 
@@ -28,7 +27,7 @@ public class UpdateOrderItemRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("amount")
     public void setAmount (int value) { 
@@ -36,7 +35,7 @@ public class UpdateOrderItemRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("description")
     public String getDescription ( ) { 
@@ -44,7 +43,7 @@ public class UpdateOrderItemRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("description")
     public void setDescription (String value) { 
@@ -52,7 +51,7 @@ public class UpdateOrderItemRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("quantity")
     public int getQuantity ( ) { 
@@ -60,7 +59,7 @@ public class UpdateOrderItemRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("quantity")
     public void setQuantity (int value) { 
@@ -68,7 +67,7 @@ public class UpdateOrderItemRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("category")
     public String getCategory ( ) { 
@@ -76,7 +75,7 @@ public class UpdateOrderItemRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("category")
     public void setCategory (String value) { 

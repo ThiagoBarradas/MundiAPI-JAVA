@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateCreditCardPaymentRequestBuilder {
     //the instance to build
     private CreateCreditCardPaymentRequest createCreditCardPaymentRequest;

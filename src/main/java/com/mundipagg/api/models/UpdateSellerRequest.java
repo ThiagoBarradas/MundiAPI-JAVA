@@ -88,7 +88,7 @@ public class UpdateSellerRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -96,7 +96,7 @@ public class UpdateSellerRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -104,7 +104,7 @@ public class UpdateSellerRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -112,7 +112,7 @@ public class UpdateSellerRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -120,7 +120,7 @@ public class UpdateSellerRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("address")
     public CreateAddressRequest getAddress ( ) { 
@@ -128,7 +128,7 @@ public class UpdateSellerRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("address")
     public void setAddress (CreateAddressRequest value) { 
@@ -136,7 +136,7 @@ public class UpdateSellerRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -144,7 +144,7 @@ public class UpdateSellerRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 

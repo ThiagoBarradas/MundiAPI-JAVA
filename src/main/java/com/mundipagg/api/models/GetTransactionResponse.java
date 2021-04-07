@@ -222,7 +222,7 @@ public class GetTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("transaction_type")
     public String getTransactionType ( ) { 
@@ -230,7 +230,7 @@ public class GetTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("transaction_type")
     public void setTransactionType (String value) { 
@@ -270,7 +270,7 @@ public class GetTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("antifraud_response")
     public GetAntifraudResponse getAntifraudResponse ( ) { 
@@ -278,7 +278,7 @@ public class GetTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("antifraud_response")
     public void setAntifraudResponse (GetAntifraudResponse value) { 
@@ -286,7 +286,7 @@ public class GetTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -294,7 +294,7 @@ public class GetTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 
@@ -302,7 +302,7 @@ public class GetTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("split")
     public List<GetSplitResponse> getSplit ( ) { 
@@ -310,7 +310,7 @@ public class GetTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("split")
     public void setSplit (List<GetSplitResponse> value) { 

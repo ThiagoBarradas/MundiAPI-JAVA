@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetAntifraudResponse 
@@ -21,7 +20,7 @@ public class GetAntifraudResponse
     private String providerName;
     private String score;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -29,7 +28,7 @@ public class GetAntifraudResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -37,7 +36,7 @@ public class GetAntifraudResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("return_code")
     public String getReturnCode ( ) { 
@@ -45,7 +44,7 @@ public class GetAntifraudResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("return_code")
     public void setReturnCode (String value) { 
@@ -53,7 +52,7 @@ public class GetAntifraudResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("return_message")
     public String getReturnMessage ( ) { 
@@ -61,7 +60,7 @@ public class GetAntifraudResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("return_message")
     public void setReturnMessage (String value) { 
@@ -69,7 +68,7 @@ public class GetAntifraudResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("provider_name")
     public String getProviderName ( ) { 
@@ -77,7 +76,7 @@ public class GetAntifraudResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("provider_name")
     public void setProviderName (String value) { 
@@ -85,7 +84,7 @@ public class GetAntifraudResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("score")
     public String getScore ( ) { 
@@ -93,7 +92,7 @@ public class GetAntifraudResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("score")
     public void setScore (String value) { 

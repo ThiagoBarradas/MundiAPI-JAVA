@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class GetDeviceResponseBuilder {
     //the instance to build
     private GetDeviceResponse getDeviceResponse;

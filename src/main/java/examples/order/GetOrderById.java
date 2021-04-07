@@ -16,7 +16,7 @@ public class GetOrderById {
 
         String orderId = "or_9j8m1E4f6HonwYA0";
 
-        OrdersController orders_controller = new OrdersController();
+        OrdersController orders_controller = client.getOrders();
 
         orders_controller.getOrderAsync(orderId, new APICallBack<GetOrderResponse>() {
             @Override

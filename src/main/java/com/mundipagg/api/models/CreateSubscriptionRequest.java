@@ -517,7 +517,7 @@ public class CreateSubscriptionRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("period")
     public CreatePeriodRequest getPeriod ( ) { 
@@ -525,7 +525,7 @@ public class CreateSubscriptionRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("period")
     public void setPeriod (CreatePeriodRequest value) { 

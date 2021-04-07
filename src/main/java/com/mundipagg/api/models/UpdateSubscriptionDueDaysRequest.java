@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class UpdateSubscriptionDueDaysRequest 
@@ -17,7 +16,7 @@ public class UpdateSubscriptionDueDaysRequest
     private static final long serialVersionUID = 42421457200859553L;
     private int boletoDueDays;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("boleto_due_days")
     public int getBoletoDueDays ( ) { 
@@ -25,7 +24,7 @@ public class UpdateSubscriptionDueDaysRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("boleto_due_days")
     public void setBoletoDueDays (int value) { 

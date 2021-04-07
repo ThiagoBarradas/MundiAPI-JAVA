@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateCardOptionsRequestBuilder {
     //the instance to build
     private CreateCardOptionsRequest createCardOptionsRequest;

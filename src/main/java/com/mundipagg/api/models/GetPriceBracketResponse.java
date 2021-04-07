@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetPriceBracketResponse 
@@ -20,7 +19,7 @@ public class GetPriceBracketResponse
     private Integer endQuantity;
     private Integer overagePrice;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("start_quantity")
     public int getStartQuantity ( ) { 
@@ -28,7 +27,7 @@ public class GetPriceBracketResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("start_quantity")
     public void setStartQuantity (int value) { 
@@ -36,7 +35,7 @@ public class GetPriceBracketResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("price")
     public int getPrice ( ) { 
@@ -44,7 +43,7 @@ public class GetPriceBracketResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("price")
     public void setPrice (int value) { 
@@ -52,7 +51,7 @@ public class GetPriceBracketResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("end_quantity")
     public Integer getEndQuantity ( ) { 
@@ -60,7 +59,7 @@ public class GetPriceBracketResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("end_quantity")
     public void setEndQuantity (Integer value) { 
@@ -68,7 +67,7 @@ public class GetPriceBracketResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("overage_price")
     public Integer getOveragePrice ( ) { 
@@ -76,7 +75,7 @@ public class GetPriceBracketResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("overage_price")
     public void setOveragePrice (Integer value) { 

@@ -5,7 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -20,7 +19,7 @@ public class CreateEmvDecryptRequest
     private CreateEmvDataDecryptRequest data;
     private CreateCardPaymentContactlessPOIRequest poi;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("icc_data")
     public String getIccData ( ) { 
@@ -28,7 +27,7 @@ public class CreateEmvDecryptRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("icc_data")
     public void setIccData (String value) { 
@@ -36,7 +35,7 @@ public class CreateEmvDecryptRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("card_sequence_number")
     public String getCardSequenceNumber ( ) { 
@@ -44,7 +43,7 @@ public class CreateEmvDecryptRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("card_sequence_number")
     public void setCardSequenceNumber (String value) { 
@@ -52,7 +51,7 @@ public class CreateEmvDecryptRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("data")
     public CreateEmvDataDecryptRequest getData ( ) { 
@@ -60,7 +59,7 @@ public class CreateEmvDecryptRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("data")
     public void setData (CreateEmvDataDecryptRequest value) { 
@@ -68,7 +67,7 @@ public class CreateEmvDecryptRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("poi")
     public CreateCardPaymentContactlessPOIRequest getPoi ( ) { 
@@ -76,7 +75,7 @@ public class CreateEmvDecryptRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("poi")
     public void setPoi (CreateCardPaymentContactlessPOIRequest value) { 

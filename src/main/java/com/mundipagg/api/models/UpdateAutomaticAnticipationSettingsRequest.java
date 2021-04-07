@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class UpdateAutomaticAnticipationSettingsRequest 
@@ -21,7 +20,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     private Integer delay;
     private Integer days;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("enabled")
     public Boolean getEnabled ( ) { 
@@ -29,7 +28,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("enabled")
     public void setEnabled (Boolean value) { 
@@ -37,7 +36,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -45,7 +44,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -53,7 +52,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("volume_percentage")
     public Integer getVolumePercentage ( ) { 
@@ -61,7 +60,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("volume_percentage")
     public void setVolumePercentage (Integer value) { 
@@ -69,7 +68,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("delay")
     public Integer getDelay ( ) { 
@@ -77,7 +76,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("delay")
     public void setDelay (Integer value) { 
@@ -85,7 +84,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("days")
     public Integer getDays ( ) { 
@@ -93,7 +92,7 @@ public class UpdateAutomaticAnticipationSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("days")
     private void setDays (Integer value) { 

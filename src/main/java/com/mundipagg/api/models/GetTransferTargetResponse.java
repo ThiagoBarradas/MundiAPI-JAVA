@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetTransferTargetResponse 
@@ -18,7 +17,7 @@ public class GetTransferTargetResponse
     private String targetId;
     private String type;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("target_id")
     public String getTargetId ( ) { 
@@ -26,7 +25,7 @@ public class GetTransferTargetResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("target_id")
     public void setTargetId (String value) { 
@@ -34,7 +33,7 @@ public class GetTransferTargetResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -42,7 +41,7 @@ public class GetTransferTargetResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 

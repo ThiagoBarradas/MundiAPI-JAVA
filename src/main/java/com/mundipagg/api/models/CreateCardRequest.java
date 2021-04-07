@@ -240,7 +240,7 @@ public class CreateCardRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("label")
     public String getLabel ( ) { 
@@ -248,7 +248,7 @@ public class CreateCardRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("label")
     public void setLabel (String value) { 

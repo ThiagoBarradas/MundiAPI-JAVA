@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreatePlanItemRequestBuilder {
     //the instance to build
     private CreatePlanItemRequest createPlanItemRequest;

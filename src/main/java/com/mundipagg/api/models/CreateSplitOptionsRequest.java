@@ -5,7 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -51,7 +50,7 @@ public class CreateSplitOptionsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("charge_remainder_fee")
     public Boolean getChargeRemainderFee ( ) { 
@@ -59,7 +58,7 @@ public class CreateSplitOptionsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("charge_remainder_fee")
     public void setChargeRemainderFee (Boolean value) { 

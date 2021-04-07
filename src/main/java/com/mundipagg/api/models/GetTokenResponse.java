@@ -5,14 +5,14 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mundipagg.api.DateTimeHelper;
+
 import org.joda.time.DateTime;
 
 @JsonInclude(Include.ALWAYS)
@@ -25,7 +25,7 @@ public class GetTokenResponse
     private String expiresAt;
     private GetCardTokenResponse card;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -33,7 +33,7 @@ public class GetTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -41,7 +41,7 @@ public class GetTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -49,7 +49,7 @@ public class GetTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -57,7 +57,7 @@ public class GetTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -66,7 +66,7 @@ public class GetTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -75,7 +75,7 @@ public class GetTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("expires_at")
     public String getExpiresAt ( ) { 
@@ -83,7 +83,7 @@ public class GetTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("expires_at")
     public void setExpiresAt (String value) { 
@@ -91,7 +91,7 @@ public class GetTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("card")
     public GetCardTokenResponse getCard ( ) { 
@@ -99,7 +99,7 @@ public class GetTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("card")
     public void setCard (GetCardTokenResponse value) { 

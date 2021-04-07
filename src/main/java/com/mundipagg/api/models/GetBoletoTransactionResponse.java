@@ -5,17 +5,15 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mundipagg.api.DateTimeHelper;
+
 import org.joda.time.DateTime;
 
 @JsonTypeInfo(
@@ -45,7 +43,7 @@ public class GetBoletoTransactionResponse
     private String type;
     private DateTime creditAt;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("url")
     public String getUrl ( ) { 
@@ -53,7 +51,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("url")
     public void setUrl (String value) { 
@@ -61,7 +59,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("barcode")
     public String getBarcode ( ) { 
@@ -69,7 +67,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("barcode")
     public void setBarcode (String value) { 
@@ -77,7 +75,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("nosso_numero")
     public String getNossoNumero ( ) { 
@@ -85,7 +83,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("nosso_numero")
     public void setNossoNumero (String value) { 
@@ -93,7 +91,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("bank")
     public String getBank ( ) { 
@@ -101,7 +99,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("bank")
     public void setBank (String value) { 
@@ -109,7 +107,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("document_number")
     public String getDocumentNumber ( ) { 
@@ -117,7 +115,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("document_number")
     public void setDocumentNumber (String value) { 
@@ -125,7 +123,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("instructions")
     public String getInstructions ( ) { 
@@ -133,7 +131,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("instructions")
     public void setInstructions (String value) { 
@@ -141,7 +139,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("billing_address")
     public GetBillingAddressResponse getBillingAddress ( ) { 
@@ -149,7 +147,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("billing_address")
     public void setBillingAddress (GetBillingAddressResponse value) { 
@@ -157,7 +155,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("due_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -166,7 +164,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("due_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -175,7 +173,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("qr_code")
     public String getQrCode ( ) { 
@@ -183,7 +181,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("qr_code")
     public void setQrCode (String value) { 
@@ -191,7 +189,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("line")
     public String getLine ( ) { 
@@ -199,7 +197,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("line")
     public void setLine (String value) { 
@@ -207,7 +205,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("pdf_password")
     public String getPdfPassword ( ) { 
@@ -215,7 +213,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("pdf_password")
     public void setPdfPassword (String value) { 
@@ -223,7 +221,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("pdf")
     public String getPdf ( ) { 
@@ -231,7 +229,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("pdf")
     public void setPdf (String value) { 
@@ -239,7 +237,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("paid_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -248,7 +246,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("paid_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -257,7 +255,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("paid_amount")
     public String getPaidAmount ( ) { 
@@ -265,7 +263,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("paid_amount")
     public void setPaidAmount (String value) { 
@@ -273,7 +271,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -281,7 +279,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -289,7 +287,7 @@ public class GetBoletoTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("credit_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -298,7 +296,7 @@ public class GetBoletoTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("credit_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

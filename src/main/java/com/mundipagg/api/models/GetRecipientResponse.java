@@ -249,7 +249,7 @@ public class GetRecipientResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("automatic_anticipation_settings")
     public GetAutomaticAnticipationResponse getAutomaticAnticipationSettings ( ) { 
@@ -257,7 +257,7 @@ public class GetRecipientResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("automatic_anticipation_settings")
     public void setAutomaticAnticipationSettings (GetAutomaticAnticipationResponse value) { 
@@ -265,7 +265,7 @@ public class GetRecipientResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("transfer_settings")
     public GetTransferSettingsResponse getTransferSettings ( ) { 
@@ -273,7 +273,7 @@ public class GetRecipientResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("transfer_settings")
     public void setTransferSettings (GetTransferSettingsResponse value) { 

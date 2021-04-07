@@ -33,7 +33,7 @@ public class GetWithdrawResponse
     private GetWithdrawSourceResponse source;
     private GetWithdrawTargetResponse target;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -41,7 +41,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -49,7 +49,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("gateway_id")
     public String getGatewayId ( ) { 
@@ -57,7 +57,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("gateway_id")
     public void setGatewayId (String value) { 
@@ -65,7 +65,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("amount")
     public int getAmount ( ) { 
@@ -73,7 +73,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("amount")
     public void setAmount (int value) { 
@@ -81,7 +81,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -89,7 +89,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -97,7 +97,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -106,7 +106,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -115,7 +115,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -124,7 +124,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -133,7 +133,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public List<String> getMetadata ( ) { 
@@ -141,7 +141,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (List<String> value) { 
@@ -149,7 +149,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("fee")
     public Integer getFee ( ) { 
@@ -157,7 +157,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("fee")
     public void setFee (Integer value) { 
@@ -165,7 +165,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("funding_date")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -174,7 +174,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("funding_date")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -183,7 +183,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("funding_estimated_date")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -192,7 +192,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("funding_estimated_date")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -201,7 +201,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -209,7 +209,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -217,7 +217,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("source")
     public GetWithdrawSourceResponse getSource ( ) { 
@@ -225,7 +225,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("source")
     public void setSource (GetWithdrawSourceResponse value) { 
@@ -233,7 +233,7 @@ public class GetWithdrawResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("target")
     public GetWithdrawTargetResponse getTarget ( ) { 
@@ -241,7 +241,7 @@ public class GetWithdrawResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("target")
     public void setTarget (GetWithdrawTargetResponse value) { 

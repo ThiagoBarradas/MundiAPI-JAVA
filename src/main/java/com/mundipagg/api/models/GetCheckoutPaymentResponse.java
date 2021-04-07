@@ -45,7 +45,7 @@ public class GetCheckoutPaymentResponse
     private GetCheckoutDebitCardPaymentResponse debitCard;
     private GetCheckoutBankTransferPaymentResponse bankTransfer;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -53,7 +53,7 @@ public class GetCheckoutPaymentResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 

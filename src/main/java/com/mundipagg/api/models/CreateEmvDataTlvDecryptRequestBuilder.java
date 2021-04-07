@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateEmvDataTlvDecryptRequestBuilder {
     //the instance to build
     private CreateEmvDataTlvDecryptRequest createEmvDataTlvDecryptRequest;

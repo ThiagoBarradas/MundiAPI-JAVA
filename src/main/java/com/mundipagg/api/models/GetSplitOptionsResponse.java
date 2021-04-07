@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetSplitOptionsResponse 
@@ -19,7 +18,7 @@ public class GetSplitOptionsResponse
     private boolean chargeProcessingFee;
     private String chargeRemainderFee;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("liable")
     public boolean getLiable ( ) { 
@@ -27,7 +26,7 @@ public class GetSplitOptionsResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("liable")
     public void setLiable (boolean value) { 
@@ -35,7 +34,7 @@ public class GetSplitOptionsResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("charge_processing_fee")
     public boolean getChargeProcessingFee ( ) { 
@@ -43,7 +42,7 @@ public class GetSplitOptionsResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("charge_processing_fee")
     public void setChargeProcessingFee (boolean value) { 
@@ -51,7 +50,7 @@ public class GetSplitOptionsResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("charge_remainder_fee")
     public String getChargeRemainderFee ( ) { 
@@ -59,7 +58,7 @@ public class GetSplitOptionsResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("charge_remainder_fee")
     public void setChargeRemainderFee (String value) { 

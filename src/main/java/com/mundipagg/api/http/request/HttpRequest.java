@@ -5,11 +5,9 @@
  */
 package com.mundipagg.api.http.request;
 
-import com.mundipagg.api.http.request.HttpMethod;
-
-import java.util.Map;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
+import java.util.Map;
 
 public class HttpRequest {
     /**

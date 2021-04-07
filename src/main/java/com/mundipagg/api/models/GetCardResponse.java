@@ -37,7 +37,7 @@ public class GetCardResponse
     private String firstSixDigits;
     private String label;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -45,7 +45,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -53,7 +53,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("last_four_digits")
     public String getLastFourDigits ( ) { 
@@ -61,7 +61,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("last_four_digits")
     public void setLastFourDigits (String value) { 
@@ -69,7 +69,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("brand")
     public String getBrand ( ) { 
@@ -77,7 +77,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("brand")
     public void setBrand (String value) { 
@@ -85,7 +85,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("holder_name")
     public String getHolderName ( ) { 
@@ -93,7 +93,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("holder_name")
     public void setHolderName (String value) { 
@@ -101,7 +101,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("exp_month")
     public int getExpMonth ( ) { 
@@ -109,7 +109,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("exp_month")
     public void setExpMonth (int value) { 
@@ -117,7 +117,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("exp_year")
     public int getExpYear ( ) { 
@@ -125,7 +125,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("exp_year")
     public void setExpYear (int value) { 
@@ -133,7 +133,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -141,7 +141,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -149,7 +149,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -158,7 +158,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -167,7 +167,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -176,7 +176,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -185,7 +185,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("billing_address")
     public GetBillingAddressResponse getBillingAddress ( ) { 
@@ -193,7 +193,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("billing_address")
     public void setBillingAddress (GetBillingAddressResponse value) { 
@@ -201,7 +201,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("customer")
     public GetCustomerResponse getCustomer ( ) { 
@@ -209,7 +209,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("customer")
     public void setCustomer (GetCustomerResponse value) { 
@@ -217,7 +217,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -225,7 +225,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 
@@ -265,7 +265,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("deleted_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -274,7 +274,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("deleted_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -299,7 +299,7 @@ public class GetCardResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("label")
     public String getLabel ( ) { 
@@ -307,7 +307,7 @@ public class GetCardResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("label")
     public void setLabel (String value) { 

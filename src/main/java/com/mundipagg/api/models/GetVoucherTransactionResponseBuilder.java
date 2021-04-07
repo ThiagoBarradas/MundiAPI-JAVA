@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class GetVoucherTransactionResponseBuilder 
         extends GetTransactionResponseBuilder {
     //the instance to build

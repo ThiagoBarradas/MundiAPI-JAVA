@@ -5,14 +5,14 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mundipagg.api.DateTimeHelper;
+
 import org.joda.time.DateTime;
 
 @JsonInclude(Include.ALWAYS)
@@ -28,7 +28,7 @@ public class GetShippingResponse
     private DateTime estimatedDeliveryDate;
     private String type;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("amount")
     public int getAmount ( ) { 
@@ -36,7 +36,7 @@ public class GetShippingResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("amount")
     public void setAmount (int value) { 
@@ -44,7 +44,7 @@ public class GetShippingResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("description")
     public String getDescription ( ) { 
@@ -52,7 +52,7 @@ public class GetShippingResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("description")
     public void setDescription (String value) { 
@@ -60,7 +60,7 @@ public class GetShippingResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("recipient_name")
     public String getRecipientName ( ) { 
@@ -68,7 +68,7 @@ public class GetShippingResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("recipient_name")
     public void setRecipientName (String value) { 
@@ -76,7 +76,7 @@ public class GetShippingResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("recipient_phone")
     public String getRecipientPhone ( ) { 
@@ -84,7 +84,7 @@ public class GetShippingResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("recipient_phone")
     public void setRecipientPhone (String value) { 
@@ -92,7 +92,7 @@ public class GetShippingResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("address")
     public GetAddressResponse getAddress ( ) { 
@@ -100,7 +100,7 @@ public class GetShippingResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("address")
     public void setAddress (GetAddressResponse value) { 

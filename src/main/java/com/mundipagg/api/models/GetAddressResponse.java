@@ -37,7 +37,7 @@ public class GetAddressResponse
     private String line2;
     private DateTime deletedAt;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -45,7 +45,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -53,7 +53,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("street")
     public String getStreet ( ) { 
@@ -61,7 +61,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("street")
     public void setStreet (String value) { 
@@ -69,7 +69,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("number")
     public String getNumber ( ) { 
@@ -77,7 +77,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("number")
     public void setNumber (String value) { 
@@ -85,7 +85,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("complement")
     public String getComplement ( ) { 
@@ -93,7 +93,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("complement")
     public void setComplement (String value) { 
@@ -101,7 +101,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("zip_code")
     public String getZipCode ( ) { 
@@ -109,7 +109,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("zip_code")
     public void setZipCode (String value) { 
@@ -117,7 +117,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("neighborhood")
     public String getNeighborhood ( ) { 
@@ -125,7 +125,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("neighborhood")
     public void setNeighborhood (String value) { 
@@ -133,7 +133,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("city")
     public String getCity ( ) { 
@@ -141,7 +141,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("city")
     public void setCity (String value) { 
@@ -149,7 +149,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("state")
     public String getState ( ) { 
@@ -157,7 +157,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("state")
     public void setState (String value) { 
@@ -165,7 +165,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("country")
     public String getCountry ( ) { 
@@ -173,7 +173,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("country")
     public void setCountry (String value) { 
@@ -181,7 +181,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -189,7 +189,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -197,7 +197,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -206,7 +206,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -215,7 +215,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -224,7 +224,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -233,7 +233,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("customer")
     public GetCustomerResponse getCustomer ( ) { 
@@ -241,7 +241,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("customer")
     public void setCustomer (GetCustomerResponse value) { 
@@ -249,7 +249,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -257,7 +257,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 
@@ -297,7 +297,7 @@ public class GetAddressResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("deleted_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -306,7 +306,7 @@ public class GetAddressResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("deleted_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

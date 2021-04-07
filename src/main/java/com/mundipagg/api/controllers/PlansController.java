@@ -5,44 +5,39 @@
  */
 package com.mundipagg.api.controllers;
 
-import java.io.*;
-import java.util.*;
-import java.util.concurrent.*;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
-import org.joda.time.DateTime;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
-import com.mundipagg.api.*;
-import com.mundipagg.api.models.*;
-import com.mundipagg.api.exceptions.*;
-import com.mundipagg.api.http.client.HttpClient;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.mundipagg.api.APIHelper;
+import com.mundipagg.api.Configuration;
+import com.mundipagg.api.DateTimeHelper;
+import com.mundipagg.api.exceptions.APIException;
+import com.mundipagg.api.http.client.APICallBack;
 import com.mundipagg.api.http.client.HttpContext;
 import com.mundipagg.api.http.request.HttpRequest;
 import com.mundipagg.api.http.response.HttpResponse;
 import com.mundipagg.api.http.response.HttpStringResponse;
-import com.mundipagg.api.http.client.APICallBack;
-import com.mundipagg.api.controllers.syncwrapper.APICallBackCatcher;
+import com.mundipagg.api.models.CreatePlanItemRequest;
+import com.mundipagg.api.models.CreatePlanRequest;
+import com.mundipagg.api.models.GetPlanItemResponse;
+import com.mundipagg.api.models.GetPlanResponse;
+import com.mundipagg.api.models.ListPlansResponse;
+import com.mundipagg.api.models.UpdateMetadataRequest;
+import com.mundipagg.api.models.UpdatePlanItemRequest;
+import com.mundipagg.api.models.UpdatePlanRequest;
+
+import org.joda.time.DateTime;
 
 public class PlansController extends BaseController {
-    //private static variables for the singleton pattern
-    private static final Object syncObject = new Object();
-    private static PlansController instance = null;
+  
+    private Configuration Configuration; 
 
-    /**
-     * Singleton pattern implementation 
-     * @return The singleton instance of the PlansController class 
-     */
-    public static PlansController getInstance() {
-        if (null == instance) {
-            synchronized (syncObject) {
-                if (null == instance) {
-                    instance = new PlansController();
-                }
-            }
-        }
-        return instance;
+    public PlansController(Configuration configuration) {
+        this.Configuration = configuration;
     }
-
+    
     /**
      * Adds a new item to a plan
      * @param    planId    Required parameter: Plan id

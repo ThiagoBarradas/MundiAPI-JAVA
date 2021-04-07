@@ -5,7 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import org.joda.time.DateTime;
 
 public class CreateCheckoutBoletoPaymentRequestBuilder {

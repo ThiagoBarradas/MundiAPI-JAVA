@@ -68,7 +68,7 @@ public class CreateCancelChargeRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("operation_reference")
     public String getOperationReference ( ) { 
@@ -76,7 +76,7 @@ public class CreateCancelChargeRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("operation_reference")
     public void setOperationReference (String value) { 

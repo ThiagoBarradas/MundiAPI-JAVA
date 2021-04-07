@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateBankTransferPaymentRequestBuilder {
     //the instance to build
     private CreateBankTransferPaymentRequest createBankTransferPaymentRequest;

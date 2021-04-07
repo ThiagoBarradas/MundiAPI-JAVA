@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateCardTokenRequestBuilder {
     //the instance to build
     private CreateCardTokenRequest createCardTokenRequest;

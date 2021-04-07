@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetPhoneResponse 
@@ -19,7 +18,7 @@ public class GetPhoneResponse
     private String number;
     private String areaCode;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("country_code")
     public String getCountryCode ( ) { 
@@ -27,7 +26,7 @@ public class GetPhoneResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("country_code")
     public void setCountryCode (String value) { 
@@ -35,7 +34,7 @@ public class GetPhoneResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("number")
     public String getNumber ( ) { 
@@ -43,7 +42,7 @@ public class GetPhoneResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("number")
     public void setNumber (String value) { 
@@ -51,7 +50,7 @@ public class GetPhoneResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("area_code")
     public String getAreaCode ( ) { 
@@ -59,7 +58,7 @@ public class GetPhoneResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("area_code")
     public void setAreaCode (String value) { 

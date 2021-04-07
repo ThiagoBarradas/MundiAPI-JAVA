@@ -20,7 +20,7 @@ public class CreateTransfer
     private String targetId;
     private LinkedHashMap<String, String> metadata;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("amount")
     public int getAmount ( ) { 
@@ -28,7 +28,7 @@ public class CreateTransfer
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("amount")
     public void setAmount (int value) { 
@@ -36,7 +36,7 @@ public class CreateTransfer
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("source_id")
     public String getSourceId ( ) { 
@@ -44,7 +44,7 @@ public class CreateTransfer
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("source_id")
     public void setSourceId (String value) { 
@@ -52,7 +52,7 @@ public class CreateTransfer
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("target_id")
     public String getTargetId ( ) { 
@@ -60,7 +60,7 @@ public class CreateTransfer
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("target_id")
     public void setTargetId (String value) { 
@@ -68,7 +68,7 @@ public class CreateTransfer
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -76,7 +76,7 @@ public class CreateTransfer
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 

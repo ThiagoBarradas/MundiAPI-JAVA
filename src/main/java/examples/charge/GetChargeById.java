@@ -9,14 +9,14 @@ public class GetChargeById {
 	
 	public static void main(String[] args) {
 
-        String basicAuthUserName = "sk_test_4tdVXpseumRmqbo"; // The username to use with basic authentication
+        String basicAuthUserName = "sk_test_q73YODBFQhyV9mod"; // The username to use with basic authentication
         String basicAuthPassword = ""; // The password to use with basic authentication
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
         String chargeId = "ch_Dzk8rbVSynuM80Ad";
 
-        ChargesController charges_controller = new ChargesController();
+        ChargesController charges_controller = client.getCharges();
 
         charges_controller.getChargeAsync(chargeId, new APICallBack<GetChargeResponse>() {
             @Override

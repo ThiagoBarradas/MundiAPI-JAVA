@@ -16,7 +16,7 @@ public class CreateCustomer {
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
-        CustomersController customers_controller = new CustomersController();
+        CustomersController customers_controller = client.getCustomers();
 
         CreateCustomerRequest request = new CreateCustomerRequest();
         request.setName("sdk customer test");

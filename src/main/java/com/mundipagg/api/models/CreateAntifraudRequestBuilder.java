@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateAntifraudRequestBuilder {
     //the instance to build
     private CreateAntifraudRequest createAntifraudRequest;

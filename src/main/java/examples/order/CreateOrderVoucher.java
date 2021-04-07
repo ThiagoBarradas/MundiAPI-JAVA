@@ -16,7 +16,7 @@ public class CreateOrderVoucher {
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
-        OrdersController orders_controller = new OrdersController();
+        OrdersController orders_controller = client.getOrders();
 
         CreateCustomerRequest customer = new CreateCustomerRequest();
         customer.setName("sdk customer order");

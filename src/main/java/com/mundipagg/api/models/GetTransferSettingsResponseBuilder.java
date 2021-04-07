@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class GetTransferSettingsResponseBuilder {
     //the instance to build
     private GetTransferSettingsResponse getTransferSettingsResponse;

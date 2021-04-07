@@ -5,7 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -89,7 +88,7 @@ public class CreatePrivateLabelPaymentRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("card_token")
     public String getCardToken ( ) { 
@@ -97,7 +96,7 @@ public class CreatePrivateLabelPaymentRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("card_token")
     public void setCardToken (String value) { 

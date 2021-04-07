@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class GetDebitCardTransactionResponseBuilder 
         extends GetTransactionResponseBuilder {
     //the instance to build

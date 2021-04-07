@@ -5,20 +5,18 @@
  */
 package com.mundipagg.api.exceptions;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import com.mundipagg.api.http.client.HttpContext;
 
 public class MErrorException 
-        extends APIException
-        implements java.io.Serializable {
+        extends APIException {
     private static final long serialVersionUID = 7330768666678869749L;
     private String message;
     private Object errors;
     private Object request;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("message")
     public String getMessage ( ) { 
@@ -26,7 +24,7 @@ public class MErrorException
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("message")
     private void setMessage (String value) { 
@@ -34,7 +32,7 @@ public class MErrorException
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("errors")
     public Object getErrors ( ) { 
@@ -42,7 +40,7 @@ public class MErrorException
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("errors")
     private void setErrors (Object value) { 
@@ -50,7 +48,7 @@ public class MErrorException
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("request")
     public Object getRequest ( ) { 
@@ -58,7 +56,7 @@ public class MErrorException
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("request")
     private void setRequest (Object value) { 

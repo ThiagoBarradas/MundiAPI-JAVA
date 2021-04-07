@@ -10,12 +10,12 @@ import java.util.*;
 public class CreatePlan {
 
     public static void main(String[] args) {
-        String basicAuthUserName = "sk_test_4tdVXpseumRmqbo"; // The username to use with basic authentication
+        String basicAuthUserName = "sk_test_q73YODBFQhyV9mod"; // The username to use with basic authentication
         String basicAuthPassword = ""; // The password to use with basic authentication
 
         MundiAPIClient client = new MundiAPIClient(basicAuthUserName, basicAuthPassword);
 
-        PlansController plans_controller = new PlansController();
+        PlansController plans_controller = client.getPlans();
 
         CreatePlanRequest request = new CreatePlanRequest();
 

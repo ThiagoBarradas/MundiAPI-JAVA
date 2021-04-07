@@ -21,7 +21,7 @@ public class GetPricingSchemeResponse
     private Integer minimumPrice;
     private Double percentage;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("price")
     public int getPrice ( ) { 
@@ -29,7 +29,7 @@ public class GetPricingSchemeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("price")
     public void setPrice (int value) { 
@@ -37,7 +37,7 @@ public class GetPricingSchemeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("scheme_type")
     public String getSchemeType ( ) { 
@@ -45,7 +45,7 @@ public class GetPricingSchemeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("scheme_type")
     public void setSchemeType (String value) { 
@@ -53,7 +53,7 @@ public class GetPricingSchemeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("price_brackets")
     public List<GetPriceBracketResponse> getPriceBrackets ( ) { 
@@ -61,7 +61,7 @@ public class GetPricingSchemeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("price_brackets")
     public void setPriceBrackets (List<GetPriceBracketResponse> value) { 
@@ -69,7 +69,7 @@ public class GetPricingSchemeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("minimum_price")
     public Integer getMinimumPrice ( ) { 
@@ -77,7 +77,7 @@ public class GetPricingSchemeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("minimum_price")
     public void setMinimumPrice (Integer value) { 

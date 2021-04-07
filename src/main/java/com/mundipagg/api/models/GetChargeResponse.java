@@ -39,7 +39,7 @@ public class GetChargeResponse
     private int canceledAmount;
     private int paidAmount;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -47,7 +47,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -55,7 +55,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("code")
     public String getCode ( ) { 
@@ -63,7 +63,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("code")
     public void setCode (String value) { 
@@ -71,7 +71,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("gateway_id")
     public String getGatewayId ( ) { 
@@ -79,7 +79,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("gateway_id")
     public void setGatewayId (String value) { 
@@ -87,7 +87,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("amount")
     public int getAmount ( ) { 
@@ -95,7 +95,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("amount")
     public void setAmount (int value) { 
@@ -103,7 +103,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("status")
     public String getStatus ( ) { 
@@ -111,7 +111,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("status")
     public void setStatus (String value) { 
@@ -119,7 +119,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("currency")
     public String getCurrency ( ) { 
@@ -127,7 +127,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("currency")
     public void setCurrency (String value) { 
@@ -135,7 +135,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("payment_method")
     public String getPaymentMethod ( ) { 
@@ -143,7 +143,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("payment_method")
     public void setPaymentMethod (String value) { 
@@ -151,7 +151,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("due_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -160,7 +160,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("due_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -169,7 +169,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -178,7 +178,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -187,7 +187,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -196,7 +196,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -205,7 +205,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("last_transaction")
     public GetTransactionResponse getLastTransaction ( ) { 
@@ -213,7 +213,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("last_transaction")
     public void setLastTransaction (GetTransactionResponse value) { 
@@ -221,7 +221,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("invoice")
     public GetInvoiceResponse getInvoice ( ) { 
@@ -229,7 +229,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("invoice")
     public void setInvoice (GetInvoiceResponse value) { 
@@ -237,7 +237,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("order")
     public GetOrderResponse getOrder ( ) { 
@@ -245,7 +245,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("order")
     public void setOrder (GetOrderResponse value) { 
@@ -253,7 +253,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("customer")
     public GetCustomerResponse getCustomer ( ) { 
@@ -261,7 +261,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("customer")
     public void setCustomer (GetCustomerResponse value) { 
@@ -269,7 +269,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -277,7 +277,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 
@@ -285,7 +285,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("paid_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -294,7 +294,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("paid_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -303,7 +303,7 @@ public class GetChargeResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("canceled_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -312,7 +312,7 @@ public class GetChargeResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("canceled_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)

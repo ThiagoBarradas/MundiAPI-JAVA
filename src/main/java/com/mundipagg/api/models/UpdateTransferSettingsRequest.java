@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class UpdateTransferSettingsRequest 
@@ -19,7 +18,7 @@ public class UpdateTransferSettingsRequest
     private String transferInterval;
     private String transferDay;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("transfer_enabled")
     public String getTransferEnabled ( ) { 
@@ -27,7 +26,7 @@ public class UpdateTransferSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("transfer_enabled")
     public void setTransferEnabled (String value) { 
@@ -35,7 +34,7 @@ public class UpdateTransferSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("transfer_interval")
     public String getTransferInterval ( ) { 
@@ -43,7 +42,7 @@ public class UpdateTransferSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("transfer_interval")
     public void setTransferInterval (String value) { 
@@ -51,7 +50,7 @@ public class UpdateTransferSettingsRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("transfer_day")
     public String getTransferDay ( ) { 
@@ -59,7 +58,7 @@ public class UpdateTransferSettingsRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("transfer_day")
     public void setTransferDay (String value) { 

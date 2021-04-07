@@ -18,7 +18,7 @@ public class ListTransactionsFilesResponse
     private List<GetTransactionReportFileResponse> data;
     private PagingResponse paging;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("data")
     public List<GetTransactionReportFileResponse> getData ( ) { 
@@ -26,7 +26,7 @@ public class ListTransactionsFilesResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("data")
     public void setData (List<GetTransactionReportFileResponse> value) { 

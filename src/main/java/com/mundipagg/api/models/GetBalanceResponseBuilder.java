@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class GetBalanceResponseBuilder {
     //the instance to build
     private GetBalanceResponse getBalanceResponse;

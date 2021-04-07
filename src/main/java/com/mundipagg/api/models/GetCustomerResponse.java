@@ -35,7 +35,7 @@ public class GetCustomerResponse
     private String code;
     private String documentType;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("id")
     public String getId ( ) { 
@@ -43,7 +43,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("id")
     public void setId (String value) { 
@@ -51,7 +51,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("name")
     public String getName ( ) { 
@@ -59,7 +59,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("name")
     public void setName (String value) { 
@@ -67,7 +67,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("email")
     public String getEmail ( ) { 
@@ -75,7 +75,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("email")
     public void setEmail (String value) { 
@@ -83,7 +83,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("delinquent")
     public boolean getDelinquent ( ) { 
@@ -91,7 +91,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("delinquent")
     public void setDelinquent (boolean value) { 
@@ -99,7 +99,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("created_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -108,7 +108,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("created_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -117,7 +117,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("updated_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -126,7 +126,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("updated_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -135,7 +135,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("document")
     public String getDocument ( ) { 
@@ -143,7 +143,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("document")
     public void setDocument (String value) { 
@@ -151,7 +151,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -159,7 +159,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -167,7 +167,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("fb_access_token")
     public String getFbAccessToken ( ) { 
@@ -175,7 +175,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("fb_access_token")
     public void setFbAccessToken (String value) { 
@@ -183,7 +183,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("address")
     public GetAddressResponse getAddress ( ) { 
@@ -191,7 +191,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("address")
     public void setAddress (GetAddressResponse value) { 
@@ -199,7 +199,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("metadata")
     public LinkedHashMap<String, String> getMetadata ( ) { 
@@ -207,7 +207,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("metadata")
     public void setMetadata (LinkedHashMap<String, String> value) { 
@@ -215,7 +215,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("phones")
     public GetPhonesResponse getPhones ( ) { 
@@ -223,7 +223,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("phones")
     public void setPhones (GetPhonesResponse value) { 
@@ -231,7 +231,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("fb_id")
     public Long getFbId ( ) { 
@@ -239,7 +239,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("fb_id")
     public void setFbId (Long value) { 
@@ -263,7 +263,7 @@ public class GetCustomerResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("document_type")
     public String getDocumentType ( ) { 
@@ -271,7 +271,7 @@ public class GetCustomerResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("document_type")
     public void setDocumentType (String value) { 

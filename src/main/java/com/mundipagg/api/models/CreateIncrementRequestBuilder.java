@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class CreateIncrementRequestBuilder {
     //the instance to build
     private CreateIncrementRequest createIncrementRequest;

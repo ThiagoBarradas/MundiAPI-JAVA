@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetCardTokenResponse 
@@ -24,7 +23,7 @@ public class GetCardTokenResponse
     private String type;
     private String label;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("last_four_digits")
     public String getLastFourDigits ( ) { 
@@ -32,7 +31,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("last_four_digits")
     public void setLastFourDigits (String value) { 
@@ -40,7 +39,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("holder_name")
     public String getHolderName ( ) { 
@@ -48,7 +47,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("holder_name")
     public void setHolderName (String value) { 
@@ -56,7 +55,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("holder_document")
     public String getHolderDocument ( ) { 
@@ -64,7 +63,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("holder_document")
     public void setHolderDocument (String value) { 
@@ -72,7 +71,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("exp_month")
     public String getExpMonth ( ) { 
@@ -80,7 +79,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("exp_month")
     public void setExpMonth (String value) { 
@@ -88,7 +87,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("exp_year")
     public String getExpYear ( ) { 
@@ -96,7 +95,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("exp_year")
     public void setExpYear (String value) { 
@@ -104,7 +103,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("brand")
     public String getBrand ( ) { 
@@ -112,7 +111,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("brand")
     public void setBrand (String value) { 
@@ -120,7 +119,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("type")
     public String getType ( ) { 
@@ -128,7 +127,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("type")
     public void setType (String value) { 
@@ -136,7 +135,7 @@ public class GetCardTokenResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("label")
     public String getLabel ( ) { 
@@ -144,7 +143,7 @@ public class GetCardTokenResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("label")
     public void setLabel (String value) { 

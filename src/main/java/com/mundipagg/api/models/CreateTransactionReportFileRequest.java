@@ -5,7 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -23,7 +22,7 @@ public class CreateTransactionReportFileRequest
     private DateTime startAt;
     private String endAt;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("name")
     public String getName ( ) { 
@@ -31,7 +30,7 @@ public class CreateTransactionReportFileRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("name")
     public void setName (String value) { 
@@ -39,7 +38,7 @@ public class CreateTransactionReportFileRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("start_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -48,7 +47,7 @@ public class CreateTransactionReportFileRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("start_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -57,7 +56,7 @@ public class CreateTransactionReportFileRequest
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("end_at")
     public String getEndAt ( ) { 
@@ -65,7 +64,7 @@ public class CreateTransactionReportFileRequest
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("end_at")
     public void setEndAt (String value) { 

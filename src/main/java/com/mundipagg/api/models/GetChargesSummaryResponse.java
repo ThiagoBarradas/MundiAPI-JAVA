@@ -5,11 +5,10 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonSetter;
 
 @JsonInclude(Include.ALWAYS)
 public class GetChargesSummaryResponse 
@@ -17,7 +16,7 @@ public class GetChargesSummaryResponse
     private static final long serialVersionUID = -90818024665791836L;
     private int total;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("total")
     public int getTotal ( ) { 
@@ -25,7 +24,7 @@ public class GetChargesSummaryResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("total")
     public void setTotal (int value) { 

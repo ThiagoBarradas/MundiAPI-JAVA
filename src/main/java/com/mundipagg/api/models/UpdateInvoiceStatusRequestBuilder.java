@@ -5,8 +5,6 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
-
 public class UpdateInvoiceStatusRequestBuilder {
     //the instance to build
     private UpdateInvoiceStatusRequest updateInvoiceStatusRequest;

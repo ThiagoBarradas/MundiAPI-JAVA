@@ -5,17 +5,17 @@
  */
 package com.mundipagg.api.models;
 
-import java.util.*;
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.annotation.JsonSetter;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonSetter;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.mundipagg.api.DateTimeHelper;
+
 import org.joda.time.DateTime;
 
 @JsonTypeInfo(
@@ -33,7 +33,7 @@ public class GetPixTransactionResponse
     private DateTime expiresAt;
     private List<PixAdditionalInformation> additionalInformation;
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("qr_code")
     public String getQrCode ( ) { 
@@ -41,7 +41,7 @@ public class GetPixTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("qr_code")
     public void setQrCode (String value) { 
@@ -49,7 +49,7 @@ public class GetPixTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("qr_code_url")
     public String getQrCodeUrl ( ) { 
@@ -57,7 +57,7 @@ public class GetPixTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("qr_code_url")
     public void setQrCodeUrl (String value) { 
@@ -65,7 +65,7 @@ public class GetPixTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("expires_at")
     @JsonSerialize(using=DateTimeHelper.Rfc8601DateTimeSerializer.class)
@@ -74,7 +74,7 @@ public class GetPixTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("expires_at")
     @JsonDeserialize(using=DateTimeHelper.Rfc8601DateTimeDeserializer.class)
@@ -83,7 +83,7 @@ public class GetPixTransactionResponse
     }
  
     /** GETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonGetter("additional_information")
     public List<PixAdditionalInformation> getAdditionalInformation ( ) { 
@@ -91,7 +91,7 @@ public class GetPixTransactionResponse
     }
     
     /** SETTER
-     * TODO: Write general description for this method
+     * 
      */
     @JsonSetter("additional_information")
     public void setAdditionalInformation (List<PixAdditionalInformation> value) { 
