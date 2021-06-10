@@ -569,6 +569,7 @@ public class InvoicesController extends BaseController {
      * @param    status    Optional parameter: Filter for Invoice's status
      * @param    dueSince    Optional parameter: Filter for Invoice's due date start range
      * @param    dueUntil    Optional parameter: Filter for Invoice's due date end range
+     * @param    customerDocument    Optional parameter: Fillter for invoice's document
      * @return    Returns the ListInvoicesResponse response from the API call 
      */
     public ListInvoicesResponse getInvoices(
@@ -581,10 +582,11 @@ public class InvoicesController extends BaseController {
                 final DateTime createdUntil,
                 final String status,
                 final DateTime dueSince,
-                final DateTime dueUntil
+                final DateTime dueUntil,
+                final String customerDocument
     ) throws Throwable {
 
-        HttpRequest _request = _buildGetInvoicesRequest(page, size, code, customerId, subscriptionId, createdSince, createdUntil, status, dueSince, dueUntil);
+        HttpRequest _request = _buildGetInvoicesRequest(page, size, code, customerId, subscriptionId, createdSince, createdUntil, status, dueSince, dueUntil, customerDocument);
         HttpResponse _response = getClientInstance().executeAsString(_request);
         HttpContext _context = new HttpContext(_request, _response);
 
@@ -603,6 +605,7 @@ public class InvoicesController extends BaseController {
      * @param    status    Optional parameter: Filter for Invoice's status
      * @param    dueSince    Optional parameter: Filter for Invoice's due date start range
      * @param    dueUntil    Optional parameter: Filter for Invoice's due date end range
+     * @param    customerDocument    Optional parameter: Fillter for invoice's document
      */
     public void getInvoicesAsync(
                 final Integer page,
@@ -615,6 +618,7 @@ public class InvoicesController extends BaseController {
                 final String status,
                 final DateTime dueSince,
                 final DateTime dueUntil,
+                final String customerDocument,
                 final APICallBack<ListInvoicesResponse> callBack
     ) {
         Runnable _responseTask = new Runnable() {
@@ -622,7 +626,7 @@ public class InvoicesController extends BaseController {
 
                 HttpRequest _request;
                 try {
-                    _request = _buildGetInvoicesRequest(page, size, code, customerId, subscriptionId, createdSince, createdUntil, status, dueSince, dueUntil);
+                    _request = _buildGetInvoicesRequest(page, size, code, customerId, subscriptionId, createdSince, createdUntil, status, dueSince, dueUntil, customerDocument);
                 } catch (Exception e) {
                     callBack.onFailure(null, e);
                     return;
@@ -664,7 +668,8 @@ public class InvoicesController extends BaseController {
                 final DateTime createdUntil,
                 final String status,
                 final DateTime dueSince,
-                final DateTime dueUntil) throws IOException, APIException {
+                final DateTime dueUntil,
+                final String customerDocument) throws IOException, APIException {
         //the base uri for api requests
         String _baseUri = Configuration.baseUri;
 
@@ -702,6 +707,9 @@ public class InvoicesController extends BaseController {
         }
         if (dueUntil != null) {
             _queryParameters.put("due_until", DateTimeHelper.toRfc8601DateTime(dueUntil));
+        }
+        if (customerDocument != null) {
+            _queryParameters.put("customer_document", customerDocument);
         }
         APIHelper.appendUrlWithQueryParameters(_queryBuilder, _queryParameters);
         //validate and preprocess url

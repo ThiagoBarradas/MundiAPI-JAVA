@@ -14,12 +14,12 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @JsonInclude(Include.ALWAYS)
 public class GetBalanceResponse 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 4290020402308774883L;
+    private static final long serialVersionUID = -6074693924236159066L;
     private String currency;
-    private int availableAmount;
+    private long availableAmount;
     private GetRecipientResponse recipient;
-    private int waitingFundsAmount;
-    private int transferredAmount;
+    private long waitingFundsAmount;
+    private long transferredAmount;
     /** GETTER
      * Currency
      */
@@ -40,7 +40,7 @@ public class GetBalanceResponse
      * Amount available for transferring
      */
     @JsonGetter("available_amount")
-    public int getAvailableAmount ( ) { 
+    public long getAvailableAmount ( ) { 
         return this.availableAmount;
     }
     
@@ -48,7 +48,7 @@ public class GetBalanceResponse
      * Amount available for transferring
      */
     @JsonSetter("available_amount")
-    public void setAvailableAmount (int value) { 
+    public void setAvailableAmount (long value) { 
         this.availableAmount = value;
     }
  
@@ -72,7 +72,7 @@ public class GetBalanceResponse
      * TODO: Write general description for this method
      */
     @JsonGetter("waiting_funds_amount")
-    public int getWaitingFundsAmount ( ) { 
+    public long getWaitingFundsAmount ( ) { 
         return this.waitingFundsAmount;
     }
     
@@ -80,7 +80,7 @@ public class GetBalanceResponse
      * TODO: Write general description for this method
      */
     @JsonSetter("waiting_funds_amount")
-    public void setWaitingFundsAmount (int value) { 
+    public void setWaitingFundsAmount (long value) { 
         this.waitingFundsAmount = value;
     }
  
@@ -88,7 +88,7 @@ public class GetBalanceResponse
      * TODO: Write general description for this method
      */
     @JsonGetter("transferred_amount")
-    public int getTransferredAmount ( ) { 
+    public long getTransferredAmount ( ) { 
         return this.transferredAmount;
     }
     
@@ -96,7 +96,7 @@ public class GetBalanceResponse
      * TODO: Write general description for this method
      */
     @JsonSetter("transferred_amount")
-    public void setTransferredAmount (int value) { 
+    public void setTransferredAmount (long value) { 
         this.transferredAmount = value;
     }
  
